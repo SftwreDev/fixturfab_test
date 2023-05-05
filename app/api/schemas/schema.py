@@ -7,12 +7,6 @@ class PcbSpecsBase(BaseModel):
     value: int
     notes: Optional[str] = None
 
-class PcbSpecsOutput(PcbSpecsBase):
-    id: Optional[int] = None
-    pcb_information: Optional[str] = None
-    value: Optional[int] = None
-    notes: Optional[str] = None
-
 
 class TestPointListBase(BaseModel):
     net: Optional[str] = None
@@ -22,7 +16,3 @@ class TestPointListBase(BaseModel):
     side: Optional[str] = None
     type: Optional[str] = None
     hole_size: Optional[str] = None
-
-
-class TestPointListOutput(TestPointListBase):
-    id: Optional[int] = None

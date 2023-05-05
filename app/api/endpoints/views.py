@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from api.models.models import PcbSpecs, TestPointList
-from api.schemas.schema import PcbSpecsBase, PcbSpecsOutput, TestPointListBase, TestPointListOutput
+from api.schemas.schema import PcbSpecsBase, TestPointListBase
 from config.settings import *
 
 router = APIRouter(
